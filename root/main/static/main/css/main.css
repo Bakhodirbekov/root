@@ -1,0 +1,30 @@
+body{
+      background-image: radial-gradient(#541f1f, #577491);
+}
+.row{
+color: #212529
+}
+
+
+
+main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: radial-gradient(#541f1f, #577491);
+}
+.custom-card {
+    width: 18rem;
+    margin: 20px;
+}
+
+.custom-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .custom-card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
