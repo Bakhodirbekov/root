@@ -1,5 +1,5 @@
 body{
-      background-image: radial-gradient(#541f1f, #577491);
+      background-image: radial-gradient(#483a3a, #575445);
 }
 .row{
 color: #212529
@@ -28,3 +28,65 @@ main{
         margin-right: 10px;
     }
 }
+
+a.btn.btn-primary {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+.card-title {
+    color:##3A4D39;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-text {
+    color:#765827;
+    font-family: 'Brass Mono', monospace;
+    font-size: 18px; /* O'zgartirishingiz mumkin */
+    font-weight: normal; /* Agar kerak bo'lsa bold ornatishingiz mumkin */
+}
+
+.semi-italic {
+    font-weight: 600;
+    font-style: italic;
+    font-weight: 600; font-style: bold;
+}
+
+.card img {
+   height: 175px;
+}
+
+
+
+   .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-right: 5px; /* Adjust the spacing between items */
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #000; /* Adjust the color of the text */
+        transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    }
+
+    .nav-link i {
+        margin-right: 5px; /* Adjust the spacing between icon and text */
+    }
+
+    .nav-link.active {
+        font-weight: bold; /* Adjust the style for the active link */
+    }
+
+    .nav-link:hover {
+        transform: scale(1.1); /* Change the scale factor as needed */
+    }

@@ -6,27 +6,53 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--  bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--  fontawesom ________________________-->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--  -->
       <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 
     <!-- Your other stylesheets or CSS imports go here -->
 
 </head>
 <body>
-<header class="site-header sticky-top py-1" style="    background-color: currentcolor;">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="main/logo/logo.svg      "></path></svg>
-    </a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Bosh menu</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">product</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">about</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">bot</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">help</a>
+  <aside>
 
-  </nav>
-</header>
+    <nav class="navbar bg-body-tertiary fixed-top" >
+  <div class="container-fluid">
+        <img src="{% static 'main/logo/logo.svg' %}" alt="logo" style="width: 50px;height: 50px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'main/logo/logo.svg' %}" alt="logo" style="width: 100px;height: 100px;"><i class="semi-italic" >Root Company</i></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-home" aria-hidden="true"></i>Главное меню</li></a>
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Устроиться на работу</li></a>
+            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-grav" aria-hidden="true"></i>O нас</li></a>
+            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-telegram" aria-hidden="true"></i>Telegram-Бот</li></a>
+            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-address-book" aria-hidden="true"></i>Контакт</li></a>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  </aside>
 <main>
     {% block content %}
     {% endblock %}
@@ -34,8 +60,13 @@
 <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-      <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+      <i style="font-size:24px" class="fa">&#xf16d;</i>
+      <i style="font-size:24px" class="fa">&#xf2c6;</i>
+      <i style="font-size:24px" class="fa">&#xf232;</i>
+      <i style="font-size:24px" class="fa">&#xf167;</i>
+      <i style="font-size:24px" class="fa">&#xf2ab;</i>
+      <i style="font-size:24px" class="fa">&#xf0d5;</i>
+      <small class="d-block mb-3 text-body-secondary">© 2023–2028</small>
     </div>
     <div class="col-6 col-md">
       <h5>Features</h5>
