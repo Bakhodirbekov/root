@@ -7,4 +7,12 @@ def about(request):
 
 def work(request):
     return render(request,'main/work.html')
+def works(request):
+    return render(request,'main/works.html')
+
+def contact(request):
+    return render(request,'main/contact.html')
+
+
+
 

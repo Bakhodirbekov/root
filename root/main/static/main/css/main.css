@@ -90,3 +90,14 @@ a.btn.btn-primary {
     .nav-link:hover {
         transform: scale(1.1); /* Change the scale factor as needed */
     }
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none; /* Remove the default border */
+}
+
+.card-img-top {
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border: 2px solid orange; /* Add a border to the image */
+}
