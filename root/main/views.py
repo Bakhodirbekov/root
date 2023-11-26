@@ -13,6 +13,9 @@ def works(request):
 def contact(request):
     return render(request,'main/contact.html')
 
+def registor_file(request):
+    return render(request,'main/registor_file.html')
+
 
 
 
