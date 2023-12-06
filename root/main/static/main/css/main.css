@@ -4,12 +4,15 @@ body{
 .row{
 color: #212529
 }
+.row img {
+width: 100%;
+}
 
 
 
-main{
-    padding-top: 30px;
+main {
     padding-bottom: 30px;
+    padding-top: 60px;
     background-image: radial-gradient(#541f1f, #577491);
 }
 .custom-card {
@@ -63,6 +66,8 @@ a.btn.btn-primary {
 .card img {
    height: 175px;
 }
+
+
 
 
 .nav-link {
@@ -178,4 +183,5 @@ text-transform: uppercase;
 }
 
 
+/*  caruselll */
 

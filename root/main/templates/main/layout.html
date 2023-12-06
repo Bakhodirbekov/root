@@ -31,30 +31,45 @@
 </head>
 <body>
   <aside>
-
-    <nav class="navbar bg-body-tertiary fixed-top" >
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
-        <img src="{% static 'main/logo/logo.svg' %}" alt="logo" style="width: 50px;height: 50px;">
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <img src="{% static 'main/logo/logo.svg' %}" alt="logo" style="width: 50px;height: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <a class="navbar-brand" href="#">
-          <img src="{% static 'main/logo/logo.svg' %}" alt="logo" style="width: 100px;height: 100px;"><i class="semi-italic" >Root Company</i></a>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="display: flex; align-items: center;">
-          <li class="nav-item" style="">
-            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-home" aria-hidden="true" style="color:rgb(179, 77, 77) "></i>Главное меню</li></a>
-            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-briefcase" aria-hidden="true" style="color:rgb(73, 148, 150) "></i>Устроиться на работу</li></a>
-            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-grav" aria-hidden="true" style="color:rgb(118, 146, 207) "></i>O нас</li></a>
-            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-telegram" aria-hidden="true" style="color: #49addf; "></i>Telegram-Бот</li></a>
-            <a class="nav-link active" aria-current="page" href="#"><li><i class="fa fa-address-book" aria-hidden="true" style="color:rgb(187, 135, 0)"></i>Контакт</li></a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto" style="padding-left: 50px;">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">Главное меню</a>
+        </li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Устроиться на работу
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for i in ctg %}
+            <li><a class="dropdown-item" href="{% url 'works' %}">{{ i.name }}</a></li>
+            {% endfor %}
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">O нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://t.me/UserResumeBot">Telegram-Бот</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">Контакт</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'news_home' %}">Новости</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
     </div>
   </div>
 </nav>

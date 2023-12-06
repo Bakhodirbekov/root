@@ -4,7 +4,6 @@
 {% block title %} Bosh Sahifa {% endblock%}
 
 {% block content %}
-
            <!-- Header-->
             <header class="bg-dark py-5">
                 <div class="container px-5">
@@ -14,8 +13,8 @@
                                 <h1 class="display-5 fw-bolder text-white mb-2">Удобная работа только на Root</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">Легкое решение для удобных вакансий и поиска работы в Root и удобное для отправки резюме</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Telegram</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">Контакты</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#https://t.me/UserResumeBot">Telegram</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="{% url 'contact' %}">Контакты</a>
                                 </div>
                             </div>
                         </div>
@@ -95,10 +94,10 @@
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Вот что Meta предлагает своим 11 тысячам уволенных сотрудников</h5></a>
                                     <p class="card-text mb-0">Шестнадцать недель базовой оплаты плюс две дополнительные недели за каждый год работы без ограничения - это то, что Meta, материнская компания платформы социальных сетей Facebook, предлагает 11 000 сотрудникам, которых она нанимает..
                                 </div>
+                                <dic class = "container-card"></dic>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="{% static 'main/logo/meta_icon.png' %}" alt="..." style="height: 150px;"/>
                                             <div class="small">
                                                 <div class="fw-bold">Келли Роуэн</div>
                                                 <div class="text-muted">Март 12, 2023 &middot; 6 мин читать</div>
@@ -119,7 +118,6 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="{% static 'main/logo/corup.jpg' %}" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Джосайя Барклай</div>
                                                 <div class="text-muted">Март 23, 2023 &middot; 4 мин читать</div>
@@ -136,13 +134,12 @@
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Новости</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Все последние новости и советы от Freelancer News</h5></a>
                                     <p class="card-text mb-0">В нашем разделе "Последние новости" вы найдете множество интересных
-статей и советов, которые помогут вам в вашем путешествии во фриланс. Написаны,
-опубликованы и готовы к просмотру нашими экспертами-фрилансерами.</p>
+                                                статей и советов,которые помогут вам в вашем путешествии во фриланс. Написаны,
+                                                опубликованы и готовы к просмотру нашими экспертами-фрилансерами.</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="{% static 'main/logo/soche.jpg' %}" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Эвелин Мартинес</div>
                                                 <div class="text-muted">Апрель 2, 2023 &middot; 10 мин читать</div>
