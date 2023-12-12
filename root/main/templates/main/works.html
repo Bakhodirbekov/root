@@ -12,7 +12,7 @@
             <h5 class="card-title">{{ i.name }}</h5>
             <p class="title">CEO & Founder, Example</p>
             <p class="card-text">{{ i.text }}</p>
-            <a href="{% url 'work' %}" class="btn btn-primary">Ishlar</a>
+            <a href="{% url 'work' id=i.id %}" class="btn btn-primary">Ishlar</a>
         </div>
     </div>
     </div>

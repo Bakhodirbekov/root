@@ -48,8 +48,8 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             {% for i in ctg %}
-            <li><a class="dropdown-item" href="{% url 'works' %}">{{ i.name }}</a></li>
-            {% endfor %}
+              <li><a class="dropdown-item" href="{% url 'works' id=i.id %}">{{ i.name }}</a></li>
+             {% endfor %}
             <li><hr class="dropdown-divider"></li>
           </ul>
         </li>
@@ -67,8 +67,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
+        <a class="btn btn-primary"  href="{% url 'login' %}">Log in</a>
       </form>
     </div>
   </div>
@@ -76,6 +75,9 @@
   </aside>
 <main>
     {% block content %}
+
+
+
     {% endblock %}
   </main>
 <footer class="container py-5">
